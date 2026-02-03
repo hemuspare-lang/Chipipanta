@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for You Chipi ♡</p>
+    </div>
+
+    <div id="letter-container" style="display: none;">
+      <div class="letter-window">
+        <h1 id="letter-title">Will you be my Valentine Chipi?</h1>
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>You’re not just my wife, you’re my best friend and my forever Valentine</strong>
+        </p>
+
+        <div id="praful-init-container" style="display: none; margin-top: 20px;">
+            <button id="praful-btn" class="btn" style="padding: 10px 20px; font-family: 'Pixelify Sans'; cursor: pointer;">
+              I accept praful as my valentine
+            </button>
+        </div>
+
+        <div id="final-choice-container" style="display: none; margin-top: 20px;">
+            <button id="final-accept" class="btn" style="padding: 10px 20px; font-family: 'Pixelify Sans'; cursor: pointer;">i accept</button>
+            <button id="final-decline" class="btn" style="padding: 10px 20px; font-family: 'Pixelify Sans'; cursor: pointer; position: relative;">i don't accept</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="horse-screen" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #ffebee; z-index: 1000; overflow: hidden; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 style="font-family: 'Pixelify Sans'; color: #d32f2f; margin-bottom: 20px; z-index: 1001; font-size: 3rem; text-align: center;">Forever Together ♡</h1>
+        <img src="horse.gif" id="horse-gif" style="width: 550px; max-width: 90vw; height: auto; z-index: 1001;">
+    </div>
+
+    <audio id="chipi-audio" src="chipi.mp3"></audio>
+    <audio id="achya-audio" src="achya.mp3"></audio>
+    <audio id="behuli-audio" src="behuli.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
